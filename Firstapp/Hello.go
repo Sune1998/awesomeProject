@@ -5,8 +5,6 @@ import (
 	"strconv"
 )
 
-var a string = "a"
-
 // golbal vars can be called outside of a func
 
 // vars can be chained together in a var() block
@@ -22,16 +20,19 @@ func main() {
 	var j int
 	j = 3
 	i := 42
-	var o string
-	o = strconv.Itoa(j)
-	// = float32(i)
+
+	var a string
+	a = strconv.Itoa(zipcode) // converts adrees into string
+
 	var h int = 33
+
 	// adding the i j h vars together
-	t := j + i + h
+	var t int = j + i + h
+
 	// print sum of the three vars
 	fmt.Println(t)
-	fmt.Println(a + name + address)
-	fmt.Println(zipcode)
-	fmt.Println(o)
+
+	// prints global vars
+	fmt.Println(name + address + a)
 
 }
