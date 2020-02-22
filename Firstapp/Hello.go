@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 var a string = "a"
 
@@ -19,6 +22,9 @@ func main() {
 	var j int
 	j = 3
 	i := 42
+	var o string
+	o = strconv.Itoa(j)
+	// = float32(i)
 	var h int = 33
 	// adding the i j h vars together
 	t := j + i + h
@@ -26,5 +32,6 @@ func main() {
 	fmt.Println(t)
 	fmt.Println(a + name + address)
 	fmt.Println(zipcode)
+	fmt.Println(o)
 
 }
